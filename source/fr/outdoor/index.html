@@ -1,0 +1,580 @@
+---
+layout: default.html
+---
+{% block content_wrapper %}
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	<a id="goUp" href="../../index.html" title="Quentin COSTER, moniteur d'escalade et grimpeur expérimenté.">Quentin COSTER</a>
+        </div>
+		<div class="language">	
+		FR
+		</div>
+		<div class="language">	
+		<a href="../../en/outdoor/index.html">EN</a>
+		</div>
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Accueil</a></li>
+                <li><a href="#work">Mes offres</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+<!-- Work Section -->
+<div id="work" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+	<div class="alert alert-info fade in">
+	<a class="close" data-dismiss="alert" href="#">x</a>
+	<strong> HEY !</strong>
+	If your a native english speaker, don't forget to switch the website in english by clicking right <a href="../../en/outdoor/index.html">HERE</a>.
+	</div>
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Mes offres</h2>
+                <h3 class="title-description">Voici trois formules pour répondre à vos attentes</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Formulas -->
+    <div class="row">
+    	
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Beez</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/formules/formule-01.jpg" alt="Beez">
+            </div>
+            <h3 class="profile-name">Journée découverte à Beez</h3>
+            <p class="profile-description">Journée ouverte à tous pour découvrir l'escalade en falaise. Sur les rochers de Beez près de Namur, vous aurez l'occasion d'apprendre tous les rudiments de cette pratique et d'évoluer à votre guise sur le calcaire du massif.
+			Une belle journée en perspective. Au programme, escalade en moulinette, rappel du sommet et premières notions sur l'escalade en  tête.</p>
+                            <ul>
+                    <li><span class="color-text">Nombre de participants :</span> 2 à 4</li>
+                    <li><span class="color-text">Compris :</span> Matériel complet et assurances</li>
+                    <li><span class="color-text">Non compris :</span> Chaussons d'escalade, lunch et transport</li>
+					<li><span class="color-text">Horaire :</span> Mercredi, jeudi ou le weekend | 10h à 17h</li>
+					<li><span class="color-text">Tarif :</span> 70 € / personne ou 90 € si seul.</li>
+                </ul>
+				<a class="button" href="#contact">Réserver</a>
+        </div>
+        <!-- End -->
+		
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Freyr</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/formules/formule-02.jpg" alt="Freyr">
+            </div>
+            <h3 class="profile-name">Perfectionnement à Freyr</h3>
+            <p class="profile-description">Cette journée s'adresse à des grimpeurs plus expérimentés qui souhaiteraient s'engager dans des projets plus sérieux et améliorer leurs compétences en falaise. Elle se déroulera sur la falaise de Freyr près de Dinant. Au programme, grand rappel de 80 mètres, grandes voies seul ou accompagné et escalade en tête. 
+			Tout ça dans une bonne ambiance et en toute sécurité.</p>
+                             <ul>
+                    <li><span class="color-text">Nombre de participants :</span> 1 à 4</li>
+                    <li><span class="color-text">Compris :</span> Matériel complet et assurances</li>
+                    <li><span class="color-text">Non compris :</span> Chaussons d'escalade, lunch et transport</li>
+					<li><span class="color-text">Horaire :</span> Mercredi, jeudi ou le weekend | 10h à 17h</li>
+					<li><span class="color-text">Tarif :</span> 70 € / personne ou 90 € si seul.</li>
+                </ul>
+				<a class="button" href="#contact">Réserver</a>
+        </div>
+        <!-- End -->
+        
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Sur mesure</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/formules/formule-03.jpg" alt="Sur mesure">
+            </div>
+            <h3 class="profile-name">Formule sur mesure</h3>
+            <p class="profile-description">Vos besoins sont spécifiques et les deux formules présentées ne vous conviennent pas. Je peux m'adapter et organiser une journée qui corresponde au mieux à vos attentes. De l'escalade en terrain d'aventure à l'initation en passant par des formations, plusieurs possibilités existent. Prenez contact avec moi pour en discuter.</p>
+                                         <ul>
+                    <li><span class="color-text">Nombre de participants :</span> Variable</li>
+					<li><span class="color-text">Lieu :</span> Variable</li>
+					<li><span class="color-text">Programme :</span> Variable</li>
+                    <li><span class="color-text">Compris & non compris :</span> Variable</li>
+					<li><span class="color-text">Horaire :</span> Mercredi, jeudi ou le weekend</li>
+					<li><span class="color-text">Tarif :</span> Variable</li>
+                </ul>
+				<a class="button" href="#contact">Me contacter</a>	
+        </div>
+        <!-- End -->
+        
+    </div>
+    <!-- End Formulas -->
+</div>
+</div>
+<!-- End Work Section -->
+
+<!-- Gallery Section -->
+<div id="gallery" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Galerie</h2>
+                    <h3 class="title-description">Voici quelques photos de mes activités.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Gallery Projects -->
+        <div class="row">
+        	<div class="span3">
+            	<!-- Filter -->
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Type d'activité</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Toutes les photos</a></li>
+                        <li><a href="#filter" data-option-value=".beez">Beez</a></li>
+                        <li><a href="#filter" data-option-value=".freyr">Freyr</a></li>
+                        <li><a href="#filter" data-option-value=".choix">Au choix</a></li>
+						<li><a href="#filter" data-option-value=".passion">Ma passion</a></li>
+                    </ul>
+                </nav>
+                <!-- End Filter -->
+            </div>
+            
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+                        
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Au sommet de l'Al'Legne" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-01-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-01.jpg" alt="Nous voici au sommet de la plus grande paroi de Belgique à Freyr : l'Al'Legne.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 beez">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Beez" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-02-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-02.jpg" alt="Rappel de la paroi à Beez.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 beez">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Beez" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-03-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-03.jpg" alt="Escalade plaisir et en sécurité aux rochers de Beez, près de Namur. ">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Freyr" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-08-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-08.jpg" alt="Grande voie plus difficile pour les plus aguérris.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Freyr" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-04-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-04.jpg" alt="Grand rappel au sommet de la paroi du Mérinos à Freyr près de Dinant. Quelle ambiance !">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Freyr" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-05-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-05.jpg" alt="Escalade plus engagée dans les fissures et dièdres de l'Al Lègne à Freyr.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 choix">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Un peu de bloc" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-09-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-09.jpg" alt="Participation à un rassemblement de bloc à l'étranger.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Freyr" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-06-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-06.jpg" alt="Petite pause au soleil avant de continuer l'aventure.">
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 freyr">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Freyr" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-07-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-07.jpg" alt="Relais dans la deuxième longueur de 'l'hypothénuse'.">
+                            </li>
+                        	<!-- End Item Project -->
+							
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 choix">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Terrain d'aventure" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-10-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-10.jpg" alt="Initiation à l'escalade sur coinceurs.">
+                            </li>
+                        	<!-- End Item Project -->
+							
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 choix">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Grand public" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-11-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-11.jpg" alt="Présentation de l'escalade au grand public.">
+                            </li>
+                        	<!-- End Item Project -->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 passion">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Alpinisme" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-12-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-12.jpg" alt="Alpinisme dans les Alpes.">
+                            </li>
+                        	<!-- End Item Project -->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 passion">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bloc" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-13-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-13.jpg" alt="Bloc en forêt de Fontainebleau.">
+                            </li>
+                        	<!-- End Item Project -->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 passion">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Compétition" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-14-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-14.jpg" alt="Participations aux compétitions nationales.">
+                            </li>
+                        	<!-- End Item Project -->
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 passion">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Trad" href="{{ site.url }}/assets/img/outdoor/galerie/full/image-15-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <!-- Thumb Image and Description -->
+                                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/galerie/thumbs/image-15.jpg" alt="Escalade traditionnelle sur coinceurs en Irlande.">
+                            </li>
+                        	<!-- End Item Project -->
+                        </ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Gallery Projects -->
+    </div>
+</div>
+<!-- End Gallery Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">A propos de moi</h2>
+                <h3 class="title-description">Grimpeur <span class="color-text">passionné</span> et <span class="color-text">expérimenté</span></h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Portrait</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/profile/profile-01.jpg" alt="Quentin COSTER">
+            </div>
+        </div>
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Escalade</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/profile/profile-02.jpg" alt="Quentin COSTER">
+            </div>  
+        </div>
+        <!-- End -->
+        
+        <!-- Start -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Alpinisme</span>
+                </div>
+                <img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/profile/profile-03.jpg" alt="Quentin COSTER">
+            </div>
+        </div>
+        <!-- End -->
+		<div class="span profile">
+			<h3 class="profile-name">Mon portrait</h3>
+            <p class="profile-description">Passionné d'aventure depuis tout petit, je n'ai jamais cessé de grimper et parcourir le monde à la recherche de parois et de montagnes à gravir. Plutôt que de me focaliser dans une filière précise, <span class="color-text">je préfère toucher à tout.</span>
+			Il n’est donc pas rare de me retrouver aux quatre coins du monde en train de m’essayer au <span class="color-text">bloc, trad, couennes sportives, grandes voies, cascade de glace et alpinisme.</span> En 2008, j’ai fondé l’ASBL <a href="http://www.climb2climb.be" target="_blank">« Climb 2 Climb »</a> avec pour objectif de promouvoir l’escalade en Belgique.
+			Par la force des choses, je suis également devenu <span class="color-text">moniteur d’escalade</span> en 2009 et cela me permis de me perfectionner et surtout de pouvoir <span class="color-text">transmettre ma passion</span>, autrement que par le biais d’internet. Entre guider des grimpeurs sur les falaises et <span class="color-text">enseigner les sciences dans le secondaire supérieur</span>, il n'y avait qu'un pas. Aujourd’hui, rien n’a changé. Mon asbl est toujours active, j'enseigne et je grimpe toujours autant.
+			Pour garder la motivation après tant d’années, <span class="color-text">je garde encore quelques beaux projets</span> que j’essaye de concrétiser au fur et à mesure.</p>
+		<div class="row">
+		<div class="span6 profile">		
+		<h3 class="profile-name">Background sportif & educatif</h3>
+			<ul>
+                    <li><span class="color-text">Polyvalence :</span> Escalade sportive, traditionnelle, alpinisme et cascade de glace.</li>
+					<br />
+					<li><span class="color-text">Compétitions :</span> Participations à de nombreux événements dont des finales de championnats de Belgique.</li>
+					<br />
+                    <li><span class="color-text">Falaise :</span> 8ème degré en voies et presque en bloc.</li>
+					<br />
+					<li><span class="color-text">Montagne :</span> Nombreuses courses en haute montagne dont l'ascension du Mont-Blanc par Bionnassay.</li>
+					<br />
+                    <li><span class="color-text">Expéditions :</span> Sommet dans l'Altaï russe et le McKinley en préparation.</li>
+					<br />
+					<li><span class="color-text">Encadrements :</span> Divers stages et sorties en salles comme en falaise. Formation des futurs moniteurs.</li>
+					<br />
+					<li><span class="color-text">Autres :</span> Président de l'asbl "Climb 2 Climb" et promotion de l'escalade dans le Benelux et en France.</li>
+             </ul>
+		</div>
+		<div class="span6">
+	<div class="image-wrap">
+	<img  class="lazy" data-original="{{ site.url }}/assets/img/outdoor/profile/skills_fr.png" alt="Quentin COSTER">
+	</div>
+	</div>
+	</div>
+		</div>			
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Me contacter</h2>
+                <h3 class="title-description">Pour une réservation, une demande ou une proposition, n'hésitez pas à me contacter</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Nom complet" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Adresse email" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Votre message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Envoyer le message</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+        
+        <div class="span3">
+        	<div class="contact-details">
+        		<h3>Détails</h3>
+                <ul>
+                    <li><a href="mailto:coster.quentin@gmail.com">coster.quentin@gmail.com</a></li>
+                    <li>0032 498 137 852</li>
+					<li><a href="https://www.facebook.com/coster.quentin" title="Suivez-moi sur Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a>&nbsp;&nbsp;<a href="http://be.linkedin.com/pub/quentin-coster/79/364/88b" title="Suivez-moi sur LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a>&nbsp;&nbsp;<a href="http://www.climb2climb.be" title="Visitez Climb 2 Climb" target="_blank"><span class="font-icon-globe_line"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+<!-- Socialize -->
+<div id="social-area" class="page-alternate-social">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/coster.quentin" title="Suivez-moi sur Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="http://be.linkedin.com/pub/quentin-coster/79/364/88b" title="Suivez-moi sur LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+						<li><a href="http://www.climb2climb.be" title="Visitez Climb 2 Climb" target="_blank"><span class="font-icon-globe_line"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Socialize -->
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+{% endblock content_wrapper %}
+
+{% block javascript %}
+<script src="{{ site.url }}/assets/js/main_outdoor.js"></script> <!-- Default JS -->
+<script src="{{ site.url }}/assets/js/jquery.lazyload.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("img.lazy").lazyload({
+	effect : "fadeIn",
+    threshold : 900
+});
+
+$(document).ready(function($) {
+var $win = $(window),
+    $con = $('#thumbs'),
+    $imgs = $("img.lazy");
+
+$con.isotope({
+    onLayout: function() {
+        $win.trigger("scroll");
+    }
+});
+
+$imgs.lazyload({
+    failure_limit: Math.max($imgs.length - 1, 0)
+});
+});
+</script>
+{% endblock javascript %}
+
+{% block css_spec %}
+<!-- Main Style -->
+<link href="/assets/css/main_outdoor.css" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+<!-- Supersized -->
+<link href="{{ site.url }}/assets/css/supersized.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/supersized.shutter.css" rel="stylesheet">
+{% endblock %}
