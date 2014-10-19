@@ -1,0 +1,59 @@
+{% extends "default.html" %}
+{% block content_wrapper %}
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+    <section id="jSplash">
+        <div id="circle"></div>
+    </section>
+</div>
+<!-- End of Splash Screen -->
+        
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title color-text">{{ site.quentin.name }}</h2>
+                <h3 class="title-description">{{ site.description }}</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    <!-- Section -->
+    <div class="page">
+        <div class="container">
+            <!-- People -->
+            <div class="row">
+
+                <!-- Start -->
+                <div class="span6 profile">
+                    <div class="image-wrap">
+                        <a class="hover-wrap" href="outdoor/index.html">
+                            <span class="overlay-img"></span>
+                            <span class="overlay-text-thumb">{{ site.climbing }}</span>
+                        </a>
+                        <a href="outdoor/index.html"><img  src="{{ site.url }}/assets/img/homepage/image01.jpg" alt="Climbing"></a>
+                    </div>
+                    <a href="outdoor/index.html"><h3 class="profile-name color-text">{{ site.climbing }}</h3></a>
+                </div>
+                <!-- End -->
+                <!-- Start -->
+                <div class="span6 profile">
+                    <div class="image-wrap">
+                        <a class="hover-wrap" href="design/index.html">
+                            <span class="overlay-img"></span>
+                            <span class="overlay-text-thumb">{{ site.graphism }}</span>
+                        </a>
+                        <a href="design/index.html"><img  src="{{ site.url }}/assets/img/homepage/image02.jpg" alt="Graphic Design"></a>
+                    </div>
+                    <a href="design/index.html"><h3 class="profile-name color-text">{{ site.graphism }}</h3></a>
+                </div>
+                <!-- End -->
+
+            </div>
+            <!-- End People -->
+        </div>
+    </div>
+</div>
+{% endblock %}
