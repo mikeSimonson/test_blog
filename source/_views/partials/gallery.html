@@ -1,0 +1,57 @@
+<div id="gallery" class="page">
+<div class="container">
+<!-- Title Page -->
+<div class="row">
+    <div class="span12">
+        <div class="title-page">
+            <h2 class="title">{{ page.i18n.gallery.title }}</h2>
+            <h3 class="title-description">{{ page.i18n.gallery.description }}</h3>
+        </div>
+    </div>
+</div>
+<!-- End Title Page -->
+
+<!-- Gallery Projects -->
+<div class="row">
+    <div class="span3">
+        <!-- Filter -->
+        <nav id="options" class="work-nav">
+            <ul id="filters" class="option-set" data-option-key="filter">
+                <li class="type-work">{{ page.i18n.activity.type }}</li>
+                {% for activity, name in page.i18n.activity.activities %}
+                    {% if activity == "all" %}
+                        <li><a href="#filter" data-option-value="*" class="selected">{{ name }}</a></li>
+                    {% else %}
+                        <li><a href="#filter" data-option-value=".{{ activity }}">{{ name }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+        <!-- End Filter -->
+    </div>
+    <div class="span9">
+        <div class="row">
+            <section id="projects">
+                <ul id="thumbs">
+                    {% for image in page.i18n.photos %}
+                    <!-- Item Project and Filter Name -->
+                    <li class="item-thumbs span3 {{ image.class }}">
+                        <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                        <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{ image.title }}" href="{{ site.url }}{{ image.src}}">
+                            <span class="overlay-img"></span>
+                            <span class="overlay-img-thumb font-icon-plus"></span>
+                        </a>
+                        <!-- Thumb Image and Description -->
+                        <img  class="lazy" data-original="{{ site.url }}{{ image.src}}" alt="{{ image.alt}}">
+                    </li>
+                    <!-- End Item Project -->
+                    {% endfor %}
+                </ul>
+            </section>
+
+        </div>
+    </div>
+</div>
+    <!-- End Gallery Projects -->
+</div>
+</div>

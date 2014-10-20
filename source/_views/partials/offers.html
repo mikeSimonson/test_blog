@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="span12">
+        <div class="title-page">
+            <h2 class="title">{{ page.i18n.offer.title }}</h2>
+            <h3 class="title-description">{{ page.i18n.offer.description }}</h3>
+        </div>
+    </div>
+</div>
+<!-- End Title Page -->
+
+<!-- Formulas -->
+<div class="row">
+
+    {% for offer in page.i18n.offer.offers %}
+    <!-- Start -->
+    <div class="span4 profile">
+        <div class="image-wrap">
+            <div class="hover-wrap">
+                <span class="overlay-img"></span>
+                <span class="overlay-text-thumb">{{ offer.alt }}</span>
+            </div>
+            <img  class="lazy" data-original="{{ site.url }}{{ offer.photo }}" alt="{{ offer.alt }}" />
+        </div>
+        <h3 class="profile-name">{{ offer.name }}</h3>
+        <p class="profile-description">{{ offer.description }}</p>
+        <ul>
+            {% for item in offer.list %}
+                <li>{{ item | raw }}</li>
+            {% endfor %}
+        </ul>
+        <a class="button" href="#contact">Réserver</a>
+    </div>
+    <!-- End -->
+    {% endfor %}
+
+</div>
+<!-- End Formulas -->
