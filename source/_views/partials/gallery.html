@@ -45,7 +45,7 @@
                             <span class="overlay-img-thumb font-icon-plus"></span>
                         </a>
                         <!-- Thumb Image and Description -->
-                        <img  class="lazy" data-original="{{ site.url }}{{ image.src}}" alt="{{ image.alt}}">
+                        <img  class="lazy" data-original="{{ site.url }}{{ image.src | replace({'full': 'thumbs'}) }}" alt="{{ image.alt}}">
                     </li>
                     <!-- End Item Project -->
                     {% endfor %}
