@@ -23,6 +23,15 @@
         </div>
         <h3 class="profile-name">{{ offer.name }}</h3>
         <p class="profile-description">{{ offer.description }}</p>
+
+    </div>
+    <!-- End -->
+    {% endfor %}
+</div>
+<div class="row">
+    {% for offer in page.offer.offers %}
+    <!-- Start -->
+    <div class="span4 profile">
         <ul>
             {% for item in offer.list %}
             <li>{{ item | raw }}</li>
