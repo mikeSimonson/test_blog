@@ -28,10 +28,17 @@
                 <li>{{ item | raw }}</li>
             {% endfor %}
         </ul>
-        <a class="button" href="#contact">Réserver</a>
     </div>
     <!-- End -->
     {% endfor %}
-
+</div>
+<div class="row">
+    {% for offer in page.offer.offers %}
+    <!-- Start -->
+    <div class="span4 profile">
+        <a class="button" href="#contact">{{ offer.contactme }}</a>
+    </div>
+    <!-- End -->
+    {% endfor %}
 </div>
 <!-- End Formulas -->
