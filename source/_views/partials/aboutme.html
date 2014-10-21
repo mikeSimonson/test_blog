@@ -36,7 +36,7 @@
                         <h3 class="profile-name">{{ page.aboutme.backgroud.name}}</h3>
                         <ul>
                             {% for item in page.aboutme.background.list %}
-                                {{ item | raw }}
+                                <li>{{ item | raw }}</li><br/>
                             {% endfor %}
                         </ul>
                     </div>
