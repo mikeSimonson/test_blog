@@ -1,0 +1,54 @@
+<div id="clients" class="page">
+    <div class="container">
+        <!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">{{ client.name }}</h2>
+                    <h3 class="title-description">{{ client.description }}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        <!-- Blockquote -->
+        <div class="row">
+            <div class="span3">
+                <div class="image-wrap">
+                    <div class="hover-wrap">
+                        <span class="overlay-img"></span>
+                        <span class="overlay-text-thumb">{{ client.featured.name }}</span>
+                    </div>
+                    <img  class="lazy" data-original="{{ site.url }}{{ client.featured.img }}" alt="{{ client.featured.name }}">
+                </div>
+            </div>
+            <!-- Start Blockquote -->
+            <div class="span9">
+                <blockquote>
+                    <p>{{ client.featured.description }}</p>
+                    <small>
+                        {{ client.featured.responsible | raw }}
+                    </small>
+                </blockquote>
+            </div>
+            <!-- End Blockquote -->
+        </div>
+        <!-- End Blockquote -->
+
+        <div class="row">
+            {% for client in client.list %}
+            <!-- Start -->
+            <div class="span3 profile">
+                <div class="image-wrap">
+                    <div class="hover-wrap">
+                        <span class="overlay-img"></span>
+                        <span class="overlay-text-thumb">{{ client.name }}</span>
+                    </div>
+                    <img  class="lazy" data-original="{{ site.url }}{{ client.img }}" alt="{{ client.name }}">
+                </div>
+            </div>
+            <!-- End -->
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

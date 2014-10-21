@@ -1,0 +1,91 @@
+{% extends "default.html" %}
+{% block content_wrapper %}
+<!-- Header -->
+{% include "partials/header.html" %}
+<!-- End Header -->
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+{% include "partials/slider.html" %}
+<!-- End Homepage Slider -->
+
+<!-- Work Section -->
+<div id="work" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    {% include "partials/alerts.html" with {'msg': page.alert.otherlang } %}
+
+    {% include "partials/offers.html" %}
+</div>
+</div>
+<!-- End Work Section -->
+
+<!-- Gallery Section -->
+{% include "partials/gallery.html" %}
+<!-- End Gallery Section -->
+
+<!-- Clients Section -->
+{% include "partials/client.html" with {'client': page.client} %}
+<!-- End Clients Section -->
+
+<!-- About Section -->
+{% include "partials/aboutme.html" %}
+<!-- End About Section -->
+
+<!-- Contact Section -->
+{% include "partials/contactme.html" %}
+<!-- End Contact Section -->
+<!-- Socialize -->
+{% include "partials/socialize.html" %}
+<!-- End Socialize -->
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+{% endblock content_wrapper %}
+
+{% block javascript %}
+<script src="{{ site.url }}/assets/js/main_design.js"></script> <!-- Default JS -->
+<script src="{{ site.url }}/assets/js/jquery.lazyload.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("img.lazy").lazyload({
+	effect : "fadeIn",
+    threshold : 900
+});
+
+$(document).ready(function($) {
+var $win = $(window),
+    $con = $('#thumbs'),
+    $imgs = $("img.lazy");
+
+$con.isotope({
+    onLayout: function() {
+        $win.trigger("scroll");
+    }
+});
+
+$imgs.lazyload({
+    failure_limit: Math.max($imgs.length - 1, 0)
+});
+});
+</script>
+{% endblock javascript %}
+
+{% block css_spec %}
+<!-- Main Style -->
+<link href="/assets/css/main_outdoor.css" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+<!-- Supersized -->
+<link href="{{ site.url }}/assets/css/supersized.css" rel="stylesheet">
+<link href="{{ site.url }}/assets/css/supersized.shutter.css" rel="stylesheet">
+{% endblock %}

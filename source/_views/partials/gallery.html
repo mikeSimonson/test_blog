@@ -6,6 +6,9 @@
         <div class="title-page">
             <h2 class="title">{{ page.gallery.title }}</h2>
             <h3 class="title-description">{{ page.gallery.description }}</h3>
+            {% if page.gallery.link %}
+            <h3 class="title-description">{{ page.gallery.link | raw }}</h3>
+            {% endif %}
         </div>
     </div>
 </div>
