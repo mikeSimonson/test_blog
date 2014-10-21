@@ -4,8 +4,8 @@
         <div class="row">
             <div class="span12">
                 <div class="title-page">
-                    <h2 class="title">Me contacter</h2>
-                    <h3 class="title-description">Pour une réservation, une demande ou une proposition, n'hésitez pas à me contacter</h3>
+                    <h2 class="title">{{ page.contactme.name }}</h2>
+                    <h3 class="title-description">{{ page.contactme.description }}</h3>
                 </div>
             </div>
         </div>
@@ -17,16 +17,16 @@
 
                 <form id="contact-form" class="contact-form" action="#">
                     <p class="contact-name">
-                        <input id="contact_name" type="text" placeholder="Nom complet" value="" name="name" />
+                        <input id="contact_name" type="text" placeholder="{{ page.contactme.form.name }}" value="" name="name" />
                     </p>
                     <p class="contact-email">
-                        <input id="contact_email" type="text" placeholder="Adresse email" value="" name="email" />
+                        <input id="contact_email" type="text" placeholder="{{ page.contactme.form.email }}" value="" name="email" />
                     </p>
                     <p class="contact-message">
-                        <textarea id="contact_message" placeholder="Votre message" name="message" rows="15" cols="40"></textarea>
+                        <textarea id="contact_message" placeholder="{{ page.contactme.form.message }}" name="message" rows="15" cols="40"></textarea>
                     </p>
                     <p class="contact-submit">
-                        <a id="contact-submit" class="submit" href="#">Envoyer le message</a>
+                        <a id="contact-submit" class="submit" href="#">{{ page.contactme.form.send }}</a>
                     </p>
 
                     <div id="response">
@@ -38,11 +38,15 @@
 
             <div class="span3">
                 <div class="contact-details">
-                    <h3>Détails</h3>
+                    <h3>{{ page.contactme.details.name }}</h3>
                     <ul>
-                        <li><a href="mailto:coster.quentin@gmail.com">coster.quentin@gmail.com</a></li>
-                        <li>0032 498 137 852</li>
-                        <li><a href="https://www.facebook.com/coster.quentin" title="Suivez-moi sur Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a>&nbsp;&nbsp;<a href="http://be.linkedin.com/pub/quentin-coster/79/364/88b" title="Suivez-moi sur LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a>&nbsp;&nbsp;<a href="http://www.climb2climb.be" title="Visitez Climb 2 Climb" target="_blank"><span class="font-icon-globe_line"></span></a></li>
+                        <li><a href="mailto:coster.quentin@gmail.com">{{ page.contactme.details.email }}</a></li>
+                        <li>{{ page.contactme.details.phone }}</li>
+                        <li>
+                            <a href="https://www.facebook.com/coster.quentin" title="{{ page.socialize.facebook }}" target="_blank"><span class="font-icon-social-facebook"></span></a>&nbsp;&nbsp;
+                            <a href="http://be.linkedin.com/pub/quentin-coster/79/364/88b" title="{{ page.socialize.linkdin }}" target="_blank"><span class="font-icon-social-linkedin"></span></a>&nbsp;&nbsp;
+                            <a href="http://www.climb2climb.be" title="{{ page.socialize.climb2climb }}" target="_blank"><span class="font-icon-globe_line"></span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
