@@ -402,7 +402,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '../../assets/js/placeholder.js'
+		nope: '/assets/js/placeholder.js'
 	}
 	]);
 	

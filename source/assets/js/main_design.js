@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '../../assets/img/design/slider-images/image01.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : '../../assets/img/design/slider-images/image02.jpg', title : '<div class="slide-content">Style</div>', thumb : '', url : ''},
-											{image : '../../assets/img/design/slider-images/image03.jpg', title : '<div class="slide-content">Accuracy</div>', thumb : '', url : ''},
-											{image : '../../assets/img/design/slider-images/image04.jpg', title : '<div class="slide-content">Fantasy</div>', thumb : '', url : ''}
+											{image : '/assets/img/design/slider-images/image01.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
+											{image : '/assets/img/design/slider-images/image02.jpg', title : '<div class="slide-content">Style</div>', thumb : '', url : ''},
+											{image : '/assets/img/design/slider-images/image03.jpg', title : '<div class="slide-content">Accuracy</div>', thumb : '', url : ''},
+											{image : '/assets/img/design/slider-images/image04.jpg', title : '<div class="slide-content">Fantasy</div>', thumb : '', url : ''}
 									],
 									
 		// Theme Options			   
@@ -405,7 +405,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '../../assets/js/placeholder.js'
+		nope: '/assets/js/placeholder.js'
 	}
 	]);
 	
