@@ -1,0 +1,23 @@
+<header>
+    <div class="sticky-nav">
+        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+        <div id="logo">
+            <a id="goUp" href="../../index.html" title="{{ page.menu.title }}">{{ page.menu.name }}</a>
+        </div>
+        <div class="language">
+            {{ page.menu.link1 | raw }}
+        </div>
+        <div class="language">
+            {{ page.menu.link2 | raw }}
+        </div>
+        <nav id="menu">
+            <ul id="menu-nav">
+                {% for item in page.menu.items %}
+                <li {% if loop.first %}class="current"{% endif %}>{{ item | raw }}</li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+    </div>
+</header>
