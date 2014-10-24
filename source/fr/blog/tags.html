@@ -1,0 +1,13 @@
+---
+layout: default
+title: Tags
+use:
+    - postsfr_tags
+---
+<h2>Tags</h2>
+
+<div>
+{% for tag,posts in data.postsfr_tags %}
+<a href="{{ site.url }}/fr/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
+{% endfor %}
+</div>

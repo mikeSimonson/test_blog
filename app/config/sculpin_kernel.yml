@@ -1,6 +1,14 @@
 sculpin_content_types:
-    posts:
-        permalink: blog/:year/:month/:day/:filename/
+    postsfr:
+        type: path
+        path: _blog_posts_fr
+        singular_name: postfr
+        layout: postfr
+        enabled: true
+        permalink: /fr/blog/:year/:month/:day/:filename/
+        taxonomies:
+            - tags
+            - categories
 sculpin_twig:
     view_paths:
         ['_views', '_layouts', '_partials', '_includes', 'assets/js']
