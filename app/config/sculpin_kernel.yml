@@ -15,3 +15,5 @@ sculpin_twig:
 sculpin_twig:
     extensions:
         ['', 'twig', 'html', 'html.twig', 'twig.html', 'js']
+sculpin:
+    ignore: ["**/*~"]
