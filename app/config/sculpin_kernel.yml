@@ -1,7 +1,7 @@
 sculpin_content_types:
     postsfr:
         type: path
-        path: _blog_posts_fr
+        path: _blog_post_fr
         singular_name: postfr
         layout: postfr
         enabled: true
