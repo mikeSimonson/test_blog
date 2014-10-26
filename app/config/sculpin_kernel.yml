@@ -9,6 +9,16 @@ sculpin_content_types:
         taxonomies:
             - tags
             - categories
+    postsen:
+        type: path
+        path: _blog_post_en
+        singular_name: posten
+        layout: posten
+        enabled: true
+        permalink: /en/blog/:year/:month/:day/:filename/
+        taxonomies:
+            - tags
+            - categories
 sculpin_twig:
     view_paths:
         ['_views', '_layouts', '_partials', '_includes', 'assets/js']
