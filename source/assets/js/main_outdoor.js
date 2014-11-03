@@ -165,14 +165,19 @@ BRUSHED.fancyBox = function(){
 				padding : 0,
 				beforeShow: function () {
                     photoLink = $(this.element).parent().find('img').attr('src');
-					this.title = $(this.element).attr('title');
-					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
-                    //Add tweet button
+                    photoDescription = $(this.element).parent().find('a').attr('title');
+                    photoDescription += ': ' + $(this.element).parent().find('img').attr('alt');
+
+                    this.title = $(this.element).attr('title');
+                    this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+                    // Add tweet button
                     this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + photoLink + '"  data-text="super cool photo" data-size="large" data-count="none">Tweet</a>';
                     this.title += "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
                     // Add FaceBook like button
 
                     this.title += '<a href="https://www.facebook.com/sharer/sharer.php?u=' + photoLink + '" target="_blank">Share on Facebook</a>';
+                    // Add Pinterest button
+                    this.title += ' <a href="//fr.pinterest.com/pin/create/button/?url=' + photoLink + '&media=' + photoLink + '&description=' + photoDescription + '">Pinterest</a>';
 
                 },
 				helpers : {
