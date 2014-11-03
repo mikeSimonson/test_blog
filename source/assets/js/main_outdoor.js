@@ -173,8 +173,7 @@ BRUSHED.fancyBox = function(){
                     // Add tweet button
                     this.title += '<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="' + photoLink + '"  data-text="super cool photo" data-size="large" data-count="none">Tweet</a>';
                     // Add FaceBook like button
-
-                    this.title += '<a href="https://www.facebook.com/sharer/sharer.php?u=' + photoLink + '" target="_blank">Share on Facebook</a>';
+                    this.title += ' <a href="https://www.facebook.com/sharer/sharer.php?u=' + photoLink + '" target="_blank">Facebook</a>';
                     // Add Pinterest button
                     this.title += ' <a href="//fr.pinterest.com/pin/create/button/?url=' + photoLink + '&media=' + photoLink + '&description=' + photoDescription + '">Pinterest</a>';
 
