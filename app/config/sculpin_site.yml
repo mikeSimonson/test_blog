@@ -3,9 +3,7 @@
 # in a template to get the contents of the `title` key.
 title: Quentin Coster
 subtitle: Never let go off your dreams
-description: Moniteur d'escalade et graphiste freelance | Climbing instructor and freelance graphic designer
 quentin:
     name: Quentin Coster
-climbing: Escalade | Climbing
-graphism: Graphisme | Graphic Design
+
 url: "http://localhost:8080"

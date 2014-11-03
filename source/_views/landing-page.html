@@ -1,6 +1,8 @@
 {% extends "default.html" %}
 {% block content_wrapper %}
 
+{% include "partials/menu.html" %}
+
 <!-- This section is for Splash Screen -->
 <div class="ole">
     <section id="jSplash">
@@ -15,7 +17,7 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title color-text">{{ site.quentin.name }}</h2>
-                <h3 class="title-description">{{ site.description }}</h3>
+                <h3 class="title-description">{{ page.description }}</h3>
             </div>
         </div>
     </div>
@@ -31,11 +33,11 @@
                     <div class="image-wrap">
                         <a class="hover-wrap" href="outdoor/index.html">
                             <span class="overlay-img"></span>
-                            <span class="overlay-text-thumb">{{ site.climbing }}</span>
+                            <span class="overlay-text-thumb">{{ page.climbing }}</span>
                         </a>
                         <a href="outdoor/index.html"><img  src="{{ site.url }}/assets/img/homepage/image01.jpg" alt="Climbing"></a>
                     </div>
-                    <a href="outdoor/index.html"><h3 class="profile-name color-text">{{ site.climbing }}</h3></a>
+                    <a href="outdoor/index.html"><h3 class="profile-name color-text">{{ page.climbing }}</h3></a>
                 </div>
                 <!-- End -->
                 <!-- Start -->
@@ -43,11 +45,11 @@
                     <div class="image-wrap">
                         <a class="hover-wrap" href="design/index.html">
                             <span class="overlay-img"></span>
-                            <span class="overlay-text-thumb">{{ site.graphism }}</span>
+                            <span class="overlay-text-thumb">{{ page.graphism }}</span>
                         </a>
                         <a href="design/index.html"><img  src="{{ site.url }}/assets/img/homepage/image02.jpg" alt="Graphic Design"></a>
                     </div>
-                    <a href="design/index.html"><h3 class="profile-name color-text">{{ site.graphism }}</h3></a>
+                    <a href="design/index.html"><h3 class="profile-name color-text">{{ page.graphism }}</h3></a>
                 </div>
                 <!-- End -->
 
@@ -56,4 +58,42 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block javascript %}
+<!-- Main Style -->
+<script src="{{ site.url }}/assets/js/main_homepage.js"></script> <!-- Default JS -->
+{% endblock %}
+{% block css_spec %}
+<link href="/assets/css/main_homepage.css" rel="stylesheet">
+<style type="text/css">
+    header #logo a:hover {
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+    }
+    header #logo a {
+        background: url(/assets/img/outdoor/logo.png) no-repeat;
+        width: 120px;
+        height: 30px;
+        text-indent: -9999px;
+        display: block;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transition: opacity 0.25s ease-in-out 0s;
+        -moz-transition: opacity 0.25s ease-in-out 0s;
+        -o-transition: opacity 0.25s ease-in-out 0s;
+        transition: opacity 0.25s ease-in-out 0s;
+    }
+    a:hover, a:active, a:focus {
+        outline: 0;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .language {
+        display: inline-block;
+        margin-left: 30px;
+        margin-top: -5px;
+        line-height: 70px;
+    }
+</style>
 {% endblock %}
